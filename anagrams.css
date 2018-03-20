@@ -1,0 +1,32 @@
+body{
+    width: 850px;
+    height: 100vh;
+    background-color: lightgrey;
+    margin: 0 auto;
+}
+.pageHeading{
+    text-align: center;
+    min-width:50px;
+    min-height:150px;
+    background-image: url('title.png');
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+.inputDivClass{
+    width:40%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:0 auto; 
+    color: darkblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+    padding:20px; 
+    
+}
+#anagramsDiv{
+   background-color: lightgoldenrodyellow;
+}
+.startBtn {
+    width: 5em;  height: 2em;
+}

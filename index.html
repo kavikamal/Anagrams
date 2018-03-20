@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="anagrams.css" type"text/css"/>
+    <title>Anagrams</title>
+</head>
+<body>  
+   <section class="pageHeading"></section> 
+   <div class="inputDivClass">
+        <div>Find Anagrams Set of length >= <input class="textClass" type="number" id="length" maxlength="2" min="1" max="10"value="2"/></div>
+        <div><input type="button" value="Find" onclick="findFunction()" class="startBtn" ></div>
+    </div>
+    <div id="anagramsDiv">
+
+    </div>
+
+<script type="text/javascript" src="words.js"></script>     
+<script type="text/javascript" src="anagrams.js"></script>    
+</body>
+</html>
