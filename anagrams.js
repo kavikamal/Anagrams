@@ -1,8 +1,7 @@
-var anagrams = function (words) {
+var Anagrams = function (words) {
     this.wordsList = words,
         this.anagramSets = {},
         this.getAnagramSets = function () {
-
             for (let i = 0; i < this.wordsList.length; i++) {
                 let word1 = this.wordsList[i];
                 if (alphabetize(word1) in this.anagramSets) {
@@ -10,7 +9,7 @@ var anagrams = function (words) {
                 } else {
                     this.anagramSets[alphabetize(word1)] = [word1];
                 }
-            }
+            }  
         },
         this.displayAnagramSets = function (length) {
             var anagramDiv = document.getElementById("anagramsDiv");
@@ -26,16 +25,17 @@ var anagrams = function (words) {
                 }
             }
         }
+       
 };
 
 function alphabetize(a) {
     return a.toLowerCase().split("").sort().join("").trim();
 }
 
-var anagramObj = new anagrams(words);
+var anagramObj = new Anagrams(words);
+anagramObj.getAnagramSets();
 
 function findFunction() {
     var len = document.getElementById("length").value;
-    anagramObj.getAnagramSets();
     anagramObj.displayAnagramSets(len);
 }
